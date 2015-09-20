@@ -33,6 +33,7 @@ apps=(
   vlc
   xquartz
   xscope
+  yate
 )
 
 homebrew_packages=(

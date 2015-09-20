@@ -5,19 +5,33 @@ brew_install_or_upgrade 'brew-cask'
 
 apps=(
   alfred
+  appcleaner
   astah-community
   atom
+  caffeine
+  cyberduck
+  disk-inventory-x
   dropbox
+  evernote
+  flux
+  github-desktop
   google-drive
   iterm2
+  imageoptim
   lastfm
   licecap
+  macvim
+  pg-commander
   rowanj-gitx
   sequel-pro
+  sizeup
   skype
   slack
+  the-unarchiver
+  transmission
   vlc
   xquartz
+  xscope
 )
 
 homebrew_packages=(

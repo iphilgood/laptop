@@ -1,0 +1,49 @@
+#!/bin/sh
+
+brew_tap 'caskroom/cask'
+brew_install_or_upgrade 'brew-cask'
+
+apps=(
+  alfred
+  astah-community
+  atom
+  dropbox
+  google-drive
+  iterm2
+  lastfm
+  licecap
+  rowanj-gitx
+  sequel-pro
+  skype
+  slack
+  vlc
+  xquartz
+)
+
+homebrew_packages=(
+  ffmpeg
+  gcc
+  ghostscript
+  htop
+  lame
+  media-info
+  mkvtoolnix
+  phantomjs
+  ssh-copy-id
+  tig
+  v8
+  wget
+  youtube-dl
+)
+
+fancy_echo "Installing apps"
+for pkg in "${apps[@]}"
+do
+  brew cask install $pkg
+done
+
+fancy_echo "Installing homebrew packages"
+for pkg in "${homebrew_packages[@]}"
+do
+  brew_install_or_upgrade $pkg
+done

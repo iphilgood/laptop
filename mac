@@ -140,7 +140,6 @@ brew "qt"
 
 # Programming languages
 brew "libyaml" # should come after openssl
-brew "node"
 brew "rbenv"
 brew "ruby-build"
 
